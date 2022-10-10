@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.4
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/I2PC/scipion-docker:
+      branch: devel
+      repo: https://github.com/I2PC/scipion-docker.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/I2PC/scipion-docker git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-burgundy-whale.sh
+        container: qc.acc_paltry-pumpkin-moorhen
+  QC.Doc:
+    repos:
+      github.com/I2PC/scipion-docker find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.wimpy-olivine-cuttlefish.sh
+        container: qc.doc_woozy-cerulean-blue
+      github.com/I2PC/scipion-docker git:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-ivory-squid.sh
+        container: qc.doc_sickly-burgundy-gecko
+      github.com/I2PC/scipion-docker markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-dandelion-vole.sh
+        container: qc.doc_slimy-olivine-gorilla
+  QC.Lic:
+    repos:
+      github.com/I2PC/scipion-docker licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-ivory-russel.sh
+        container: qc.lic_crabby-russet-barb
+  QC.Sty:
+    repos:
+      github.com/I2PC/scipion-docker hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-violet-uakari.sh
+        container: qc.sty_leaky-taupe-avocet
+  QC.Ver:
+    repos:
+      github.com/I2PC/scipion-docker get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-orange-nightingale.sh
+        container: qc.ver_pokey-periwinkle-jackal
+timeout: 1800
