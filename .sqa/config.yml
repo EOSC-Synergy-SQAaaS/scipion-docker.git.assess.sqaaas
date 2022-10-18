@@ -7,6 +7,9 @@ config:
     github.com/I2PC/scipion-docker:
       branch: ibergrid22
       repo: https://github.com/I2PC/scipion-docker.git
+    github.com/scipion-em/docs:
+      branch: ibergrid22
+      repo: https://github.com/scipion-em/docs.git
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,38 +18,42 @@ sqa_criteria:
     repos:
       github.com/I2PC/scipion-docker git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-plum-blue.sh
-        container: qc.acc_whiny-cornflower-frog
+        - /usr/bin/env sh .sqa/script.wiggy-mauve-dane.sh
+        container: qc.acc_skinny-thistle-moth
   QC.Doc:
     repos:
-      github.com/I2PC/scipion-docker find_doc_files.py:
+      github.com/scipion-em/docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-green-salamander.sh
-        container: qc.doc_grumpy-cornflower-tamarin
-      github.com/I2PC/scipion-docker git:
+        - /usr/bin/env sh .sqa/script.wimpy-burgundy-squid.sh
+        container: qc.doc_beady-cobalt-stoat
+      github.com/scipion-em/docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-brass-shrimp.sh
-        container: qc.doc_pasty-lavender-nightingale
-      github.com/I2PC/scipion-docker markdownlint:
+        - /usr/bin/env sh .sqa/script.tasty-xanthic-wolfhound.sh
+        container: qc.doc_squeaky-cerise-armadillo
+      github.com/scipion-em/docs markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-fuchsia-tzu.sh
-        container: qc.doc_sleazy-maroon-alligator
+        - /usr/bin/env sh .sqa/script.stealthy-persimmon-akita.sh
+        container: qc.doc_stuffy-lime-stoat
+      github.com/scipion-em/docs restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-mustard-bee.sh
+        container: qc.doc_skinny-jade-barnacle
   QC.Lic:
     repos:
       github.com/I2PC/scipion-docker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-amber-goose.sh
-        container: qc.lic_surly-gold-markhor
+        - /usr/bin/env sh .sqa/script.sloppy-sapphire-bordeaux.sh
+        container: qc.lic_lumpy-tomato-spitz
   QC.Sty:
     repos:
       github.com/I2PC/scipion-docker hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-aqua-bracke.sh
-        container: qc.sty_randy-dandelion-magpie
+        - /usr/bin/env sh .sqa/script.sunny-buff-tetra.sh
+        container: qc.sty_skanky-maroon-avocet
   QC.Ver:
     repos:
       github.com/I2PC/scipion-docker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-xanthic-flounder.sh
-        container: qc.ver_scaly-magnolia-cockroach
+        - /usr/bin/env sh .sqa/script.squirrely-grey-antelope.sh
+        container: qc.ver_paltry-corn-badger
 timeout: 1800
