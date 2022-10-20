@@ -18,42 +18,38 @@ sqa_criteria:
     repos:
       github.com/I2PC/scipion-docker git:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-mauve-dane.sh
-        container: qc.acc_skinny-thistle-moth
+        - /usr/bin/env sh .sqa/script.pretty-linen-weasel.sh
+        container: qc.acc_lousy-seashell-weasel
   QC.Doc:
     repos:
       github.com/scipion-em/docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-burgundy-squid.sh
-        container: qc.doc_beady-cobalt-stoat
+        - /usr/bin/env sh .sqa/script.shaggy-puce-akbash.sh
+        container: qc.doc_grumpy-carmine-hamster
       github.com/scipion-em/docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-xanthic-wolfhound.sh
-        container: qc.doc_squeaky-cerise-armadillo
-      github.com/scipion-em/docs markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.stealthy-persimmon-akita.sh
-        container: qc.doc_stuffy-lime-stoat
+        - /usr/bin/env sh .sqa/script.shaky-mustard-fox.sh
+        container: qc.doc_hilly-heliotrope-snail
       github.com/scipion-em/docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-mustard-bee.sh
-        container: qc.doc_skinny-jade-barnacle
+        - /usr/bin/env sh .sqa/script.trippy-ecru-mandrill.sh
+        container: qc.doc_hilly-beige-dormouse
   QC.Lic:
     repos:
       github.com/I2PC/scipion-docker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-sapphire-bordeaux.sh
-        container: qc.lic_lumpy-tomato-spitz
+        - /usr/bin/env sh .sqa/script.seedy-amethyst-harrier.sh
+        container: qc.lic_muzzy-olive-mole
   QC.Sty:
     repos:
       github.com/I2PC/scipion-docker hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-buff-tetra.sh
-        container: qc.sty_skanky-maroon-avocet
+        - /usr/bin/env sh .sqa/script.hilly-cream-dodo.sh
+        container: qc.sty_snappy-firebrick-cassowary
   QC.Ver:
     repos:
       github.com/I2PC/scipion-docker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-grey-antelope.sh
-        container: qc.ver_paltry-corn-badger
+        - /usr/bin/env sh .sqa/script.chummy-orchid-heron.sh
+        container: qc.ver_thirsty-taupe-macaque
 timeout: 1800
