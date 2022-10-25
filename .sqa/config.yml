@@ -18,38 +18,38 @@ sqa_criteria:
     repos:
       github.com/I2PC/scipion-docker git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-linen-weasel.sh
-        container: qc.acc_lousy-seashell-weasel
+        - /usr/bin/env sh .sqa/script.tacky-blue-moorhen.sh
+        container: qc.acc_lovely-cream-mule
   QC.Doc:
     repos:
       github.com/scipion-em/docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-puce-akbash.sh
-        container: qc.doc_grumpy-carmine-hamster
+        - /usr/bin/env sh .sqa/script.cheeky-cyan-bordeaux.sh
+        container: qc.doc_zippy-goldenrod-affenpinscher
       github.com/scipion-em/docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-mustard-fox.sh
-        container: qc.doc_hilly-heliotrope-snail
+        - /usr/bin/env sh .sqa/script.nerdy-khaki-gibbon.sh
+        container: qc.doc_tacky-indigo-mist
       github.com/scipion-em/docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-ecru-mandrill.sh
-        container: qc.doc_hilly-beige-dormouse
+        - /usr/bin/env sh .sqa/script.snippy-chartreuse-labradoodle.sh
+        container: qc.doc_seedy-firebrick-beagle
   QC.Lic:
     repos:
       github.com/I2PC/scipion-docker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-amethyst-harrier.sh
-        container: qc.lic_muzzy-olive-mole
+        - /usr/bin/env sh .sqa/script.wimpy-denim-ocelot.sh
+        container: qc.lic_shabby-gold-capuchin
   QC.Sty:
     repos:
       github.com/I2PC/scipion-docker hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-cream-dodo.sh
-        container: qc.sty_snappy-firebrick-cassowary
+        - /usr/bin/env sh .sqa/script.crappy-corn-ragdoll.sh
+        container: qc.sty_zippy-buff-cockroach
   QC.Ver:
     repos:
       github.com/I2PC/scipion-docker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-orchid-heron.sh
-        container: qc.ver_thirsty-taupe-macaque
+        - /usr/bin/env sh .sqa/script.bluesy-white-corgi.sh
+        container: qc.ver_freaky-mustard-guppy
 timeout: 1800
