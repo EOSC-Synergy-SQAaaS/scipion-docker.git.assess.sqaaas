@@ -18,38 +18,38 @@ sqa_criteria:
     repos:
       github.com/I2PC/scipion-docker git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-blue-moorhen.sh
-        container: qc.acc_lovely-cream-mule
+        - /usr/bin/env sh .sqa/script.ready-malachite-audemer.sh
+        container: qc.acc_scummy-ruby-falcon
   QC.Doc:
     repos:
       github.com/scipion-em/docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-cyan-bordeaux.sh
-        container: qc.doc_zippy-goldenrod-affenpinscher
+        - /usr/bin/env sh .sqa/script.skanky-corn-robin.sh
+        container: qc.doc_smelly-olive-dhole
       github.com/scipion-em/docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-khaki-gibbon.sh
-        container: qc.doc_tacky-indigo-mist
+        - /usr/bin/env sh .sqa/script.randy-razzmatazz-tiger.sh
+        container: qc.doc_woozy-amber-dhole
       github.com/scipion-em/docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-chartreuse-labradoodle.sh
-        container: qc.doc_seedy-firebrick-beagle
+        - /usr/bin/env sh .sqa/script.whiny-smalt-fousek.sh
+        container: qc.doc_ready-chartreuse-echidna
   QC.Lic:
     repos:
       github.com/I2PC/scipion-docker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-denim-ocelot.sh
-        container: qc.lic_shabby-gold-capuchin
+        - /usr/bin/env sh .sqa/script.scummy-malachite-squirrel.sh
+        container: qc.lic_nerdy-corn-bat
   QC.Sty:
     repos:
       github.com/I2PC/scipion-docker hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-corn-ragdoll.sh
-        container: qc.sty_zippy-buff-cockroach
+        - /usr/bin/env sh .sqa/script.hasty-apricot-goat.sh
+        container: qc.sty_jumpy-orange-quetzal
   QC.Ver:
     repos:
       github.com/I2PC/scipion-docker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-white-corgi.sh
-        container: qc.ver_freaky-mustard-guppy
+        - /usr/bin/env sh .sqa/script.snazzy-silver-blue.sh
+        container: qc.ver_gummy-violet-tamarin
 timeout: 1800
