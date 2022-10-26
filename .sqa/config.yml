@@ -18,38 +18,38 @@ sqa_criteria:
     repos:
       github.com/I2PC/scipion-docker git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-malachite-audemer.sh
-        container: qc.acc_scummy-ruby-falcon
+        - /usr/bin/env sh .sqa/script.crappy-cardinal-seal.sh
+        container: qc.acc_randy-mauve-cow
   QC.Doc:
     repos:
       github.com/scipion-em/docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-corn-robin.sh
-        container: qc.doc_smelly-olive-dhole
+        - /usr/bin/env sh .sqa/script.nerdy-cinnabar-kangaroo.sh
+        container: qc.doc_paltry-chocolate-uakari
       github.com/scipion-em/docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-razzmatazz-tiger.sh
-        container: qc.doc_woozy-amber-dhole
+        - /usr/bin/env sh .sqa/script.squeaky-green-coral.sh
+        container: qc.doc_seedy-corn-quetzal
       github.com/scipion-em/docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-smalt-fousek.sh
-        container: qc.doc_ready-chartreuse-echidna
+        - /usr/bin/env sh .sqa/script.homely-gamboge-termite.sh
+        container: qc.doc_flabby-persimmon-dachshund
   QC.Lic:
     repos:
       github.com/I2PC/scipion-docker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-malachite-squirrel.sh
-        container: qc.lic_nerdy-corn-bat
+        - /usr/bin/env sh .sqa/script.foggy-sepia-loon.sh
+        container: qc.lic_snippy-green-bee
   QC.Sty:
     repos:
       github.com/I2PC/scipion-docker hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-apricot-goat.sh
-        container: qc.sty_jumpy-orange-quetzal
+        - /usr/bin/env sh .sqa/script.chummy-goldenrod-owl.sh
+        container: qc.sty_boozy-lemon-quokka
   QC.Ver:
     repos:
       github.com/I2PC/scipion-docker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-silver-blue.sh
-        container: qc.ver_gummy-violet-tamarin
+        - /usr/bin/env sh .sqa/script.gummy-bronze-lemur.sh
+        container: qc.ver_homey-taupe-chameleon
 timeout: 1800
